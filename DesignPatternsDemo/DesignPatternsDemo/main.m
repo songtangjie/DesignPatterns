@@ -15,6 +15,7 @@
 #import "IFactory.h"
 #import "Prototype.h"
 #import "ConcreteClassA.h"
+#import "Facade.h"
 
 void testSingleFactory()
 {
@@ -82,6 +83,13 @@ void testTemplateMethod()
     [c templateMethod];
 }
 
+void testFacade()
+{
+    Facade *facade = [[Facade alloc] init];
+    [facade methodA];
+    [facade methodB];
+}
+
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -91,7 +99,8 @@ int main(int argc, const char * argv[]) {
 //        testProxy();
 //        testFactoryMethod();
 //        testPrototype();
-        testTemplateMethod();
+//        testTemplateMethod();
+        testFacade();
     }
     return 0;
 }

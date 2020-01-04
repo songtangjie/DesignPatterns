@@ -18,6 +18,8 @@
 		BECE860323BB427A00F63203 /* Prototype.m in Sources */ = {isa = PBXBuildFile; fileRef = BECE860223BB427A00F63203 /* Prototype.m */; };
 		BECE860723BB4A5200F63203 /* AbstractClass.m in Sources */ = {isa = PBXBuildFile; fileRef = BECE860623BB4A5200F63203 /* AbstractClass.m */; };
 		BECE860A23BB4DBB00F63203 /* ConcreteClassA.m in Sources */ = {isa = PBXBuildFile; fileRef = BECE860923BB4DBB00F63203 /* ConcreteClassA.m */; };
+		BECE864823C03A0A00F63203 /* SubSystemOne.m in Sources */ = {isa = PBXBuildFile; fileRef = BECE864723C03A0A00F63203 /* SubSystemOne.m */; };
+		BECE864B23C03A9800F63203 /* Facade.m in Sources */ = {isa = PBXBuildFile; fileRef = BECE864A23C03A9800F63203 /* Facade.m */; };
 		BED6CA5623B3021A00AEE675 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BED6CA5523B3021A00AEE675 /* main.m */; };
 		BED6CA5E23B3029200AEE675 /* SingleFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = BED6CA5D23B3029200AEE675 /* SingleFactory.m */; };
 		BED6CA6423B303AC00AEE675 /* Operation.m in Sources */ = {isa = PBXBuildFile; fileRef = BED6CA6323B303AC00AEE675 /* Operation.m */; };
@@ -60,6 +62,10 @@
 		BECE860623BB4A5200F63203 /* AbstractClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AbstractClass.m; sourceTree = "<group>"; };
 		BECE860823BB4DBB00F63203 /* ConcreteClassA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConcreteClassA.h; sourceTree = "<group>"; };
 		BECE860923BB4DBB00F63203 /* ConcreteClassA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConcreteClassA.m; sourceTree = "<group>"; };
+		BECE864623C03A0A00F63203 /* SubSystemOne.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubSystemOne.h; sourceTree = "<group>"; };
+		BECE864723C03A0A00F63203 /* SubSystemOne.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubSystemOne.m; sourceTree = "<group>"; };
+		BECE864923C03A9800F63203 /* Facade.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Facade.h; sourceTree = "<group>"; };
+		BECE864A23C03A9800F63203 /* Facade.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Facade.m; sourceTree = "<group>"; };
 		BED6CA5223B3021A00AEE675 /* DesignPatternsDemo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DesignPatternsDemo; sourceTree = BUILT_PRODUCTS_DIR; };
 		BED6CA5523B3021A00AEE675 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BED6CA5C23B3029200AEE675 /* SingleFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingleFactory.h; sourceTree = "<group>"; };
@@ -140,6 +146,17 @@
 			path = TemplateMethod;
 			sourceTree = "<group>";
 		};
+		BECE864523C039DA00F63203 /* Facade */ = {
+			isa = PBXGroup;
+			children = (
+				BECE864623C03A0A00F63203 /* SubSystemOne.h */,
+				BECE864723C03A0A00F63203 /* SubSystemOne.m */,
+				BECE864923C03A9800F63203 /* Facade.h */,
+				BECE864A23C03A9800F63203 /* Facade.m */,
+			);
+			path = Facade;
+			sourceTree = "<group>";
+		};
 		BED6CA4923B3021A00AEE675 = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +176,7 @@
 		BED6CA5423B3021A00AEE675 /* DesignPatternsDemo */ = {
 			isa = PBXGroup;
 			children = (
+				BECE864523C039DA00F63203 /* Facade */,
 				BECE860423BB4A1C00F63203 /* TemplateMethod */,
 				BECE860023BB417C00F63203 /* Prototype */,
 				BECE85F923BB230100F63203 /* FactoryMethod */,
@@ -257,6 +275,8 @@
 				BECE85FC23BB303500F63203 /* IFactory.m in Sources */,
 				BECE860A23BB4DBB00F63203 /* ConcreteClassA.m in Sources */,
 				BED6CA6423B303AC00AEE675 /* Operation.m in Sources */,
+				BECE864B23C03A9800F63203 /* Facade.m in Sources */,
+				BECE864823C03A0A00F63203 /* SubSystemOne.m in Sources */,
 				BED6CA5E23B3029200AEE675 /* SingleFactory.m in Sources */,
 				BECE85F523B99D7300F63203 /* RealSubject.m in Sources */,
 				BECE85E823B9947300F63203 /* DecoratorComponent.m in Sources */,
