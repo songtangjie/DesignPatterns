@@ -16,6 +16,7 @@
 #import "Prototype.h"
 #import "ConcreteClassA.h"
 #import "Facade.h"
+#import "Director.h"
 
 void testSingleFactory()
 {
@@ -90,6 +91,21 @@ void testFacade()
     [facade methodB];
 }
 
+void testBuilder()
+{
+    Director *director = [Director new];
+    Builder *b1 = [ConcreteBuilder1 new];
+    Builder *b2 = [ConcreteBuilder2 new];
+    
+    [director construct:b1];
+    Product *p1 = [b1 getResult];
+    [p1 show];
+    
+    [director construct:b2];
+    Product *p2 = [b2 getResult];
+    [p2 show];
+}
+
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -100,7 +116,8 @@ int main(int argc, const char * argv[]) {
 //        testFactoryMethod();
 //        testPrototype();
 //        testTemplateMethod();
-        testFacade();
+//        testFacade();
+        testBuilder();
     }
     return 0;
 }
