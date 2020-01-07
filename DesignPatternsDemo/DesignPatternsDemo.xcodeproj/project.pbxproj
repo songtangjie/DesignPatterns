@@ -28,6 +28,8 @@
 		BEEC2A3E23C2C984005A50B3 /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEC2A3D23C2C984005A50B3 /* Product.m */; };
 		BEEC2A4123C2CA51005A50B3 /* Builder.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEC2A4023C2CA51005A50B3 /* Builder.m */; };
 		BEEC2A4423C2CB68005A50B3 /* Director.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEC2A4323C2CB68005A50B3 /* Director.m */; };
+		BEEC2A7823C429F4005A50B3 /* StockObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEC2A7723C429F4005A50B3 /* StockObserver.m */; };
+		BEEC2A7B23C42A35005A50B3 /* ObserVerSubject.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEC2A7A23C42A35005A50B3 /* ObserVerSubject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -85,6 +87,10 @@
 		BEEC2A4023C2CA51005A50B3 /* Builder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Builder.m; sourceTree = "<group>"; };
 		BEEC2A4223C2CB68005A50B3 /* Director.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Director.h; sourceTree = "<group>"; };
 		BEEC2A4323C2CB68005A50B3 /* Director.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Director.m; sourceTree = "<group>"; };
+		BEEC2A7623C429F4005A50B3 /* StockObserver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StockObserver.h; sourceTree = "<group>"; };
+		BEEC2A7723C429F4005A50B3 /* StockObserver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StockObserver.m; sourceTree = "<group>"; };
+		BEEC2A7923C42A35005A50B3 /* ObserVerSubject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObserVerSubject.h; sourceTree = "<group>"; };
+		BEEC2A7A23C42A35005A50B3 /* ObserVerSubject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObserVerSubject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +191,7 @@
 		BED6CA5423B3021A00AEE675 /* DesignPatternsDemo */ = {
 			isa = PBXGroup;
 			children = (
+				BEEC2A7223C42471005A50B3 /* Observer */,
 				BEEC2A3B23C2C965005A50B3 /* Builder */,
 				BECE864523C039DA00F63203 /* Facade */,
 				BECE860423BB4A1C00F63203 /* TemplateMethod */,
@@ -232,6 +239,17 @@
 				BEEC2A4323C2CB68005A50B3 /* Director.m */,
 			);
 			path = Builder;
+			sourceTree = "<group>";
+		};
+		BEEC2A7223C42471005A50B3 /* Observer */ = {
+			isa = PBXGroup;
+			children = (
+				BEEC2A7623C429F4005A50B3 /* StockObserver.h */,
+				BEEC2A7723C429F4005A50B3 /* StockObserver.m */,
+				BEEC2A7923C42A35005A50B3 /* ObserVerSubject.h */,
+				BEEC2A7A23C42A35005A50B3 /* ObserVerSubject.m */,
+			);
+			path = Observer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,6 +311,7 @@
 			files = (
 				BECE860323BB427A00F63203 /* Prototype.m in Sources */,
 				BECE85FF23BB304E00F63203 /* LeiFeng.m in Sources */,
+				BEEC2A7823C429F4005A50B3 /* StockObserver.m in Sources */,
 				BEEC2A3E23C2C984005A50B3 /* Product.m in Sources */,
 				BEEC2A4123C2CA51005A50B3 /* Builder.m in Sources */,
 				BEEC2A4423C2CB68005A50B3 /* Director.m in Sources */,
@@ -301,6 +320,7 @@
 				BECE85FC23BB303500F63203 /* IFactory.m in Sources */,
 				BECE860A23BB4DBB00F63203 /* ConcreteClassA.m in Sources */,
 				BED6CA6423B303AC00AEE675 /* Operation.m in Sources */,
+				BEEC2A7B23C42A35005A50B3 /* ObserVerSubject.m in Sources */,
 				BECE864B23C03A9800F63203 /* Facade.m in Sources */,
 				BECE864823C03A0A00F63203 /* SubSystemOne.m in Sources */,
 				BED6CA5E23B3029200AEE675 /* SingleFactory.m in Sources */,

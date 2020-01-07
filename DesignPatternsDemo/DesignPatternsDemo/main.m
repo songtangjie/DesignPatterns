@@ -17,6 +17,7 @@
 #import "ConcreteClassA.h"
 #import "Facade.h"
 #import "Director.h"
+#import "StockObserver.h"
 
 void testSingleFactory()
 {
@@ -106,6 +107,21 @@ void testBuilder()
     [p2 show];
 }
 
+// oc的观察者模式有：KVO、代理、通知、block
+void testObserver()
+{
+    Boss *huhansan = [Boss new];
+    
+    StockObserver *tongshi1 = [[StockObserver alloc] initWithStr:@"小张" subJect:huhansan];
+    NBAObserver *tongshi2 = [[NBAObserver alloc] initWithStr:@"小王" subJect:huhansan];
+    
+//    huhansan.delegate = tongshi1;
+    // oc的代理模式是一对一，所以可用通知方式一对多，这里方便演示
+    huhansan.delegate = tongshi2;
+    
+    huhansan.subjectState = @"我胡汉三回来了！";
+    [huhansan notify];
+}
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -117,7 +133,8 @@ int main(int argc, const char * argv[]) {
 //        testPrototype();
 //        testTemplateMethod();
 //        testFacade();
-        testBuilder();
+//        testBuilder();
+        testObserver();
     }
     return 0;
 }
