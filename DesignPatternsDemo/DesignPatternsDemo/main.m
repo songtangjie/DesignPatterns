@@ -18,6 +18,7 @@
 #import "Facade.h"
 #import "Director.h"
 #import "StockObserver.h"
+#import "IFacroty.h"
 
 void testSingleFactory()
 {
@@ -123,9 +124,26 @@ void testObserver()
     [huhansan notify];
 }
 
+void testAbstractFactory()
+{
+    User *user = [User new];
+    Department *dept = [Department new];
+    
+//    IFacroty *factory = [SqlFacroty new];
+    IFacroty *factory = [AccessFacroty new];
+    
+    IUser *iu = [factory createUser];
+    [iu insertUser:user];
+    [iu getUser:@"1"];
+    
+    IDepartment *ide = [factory createDepartment];
+    [ide inserDepartment:dept];
+    [ide getDepartment:@"1"];
+}
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-//        testSingleFactory();
+        testSingleFactory();
 //        testStrategy();
 //        testDecorator();
 //        testProxy();
@@ -134,7 +152,8 @@ int main(int argc, const char * argv[]) {
 //        testTemplateMethod();
 //        testFacade();
 //        testBuilder();
-        testObserver();
+//        testObserver();
+//        testAbstractFactory();
     }
     return 0;
 }

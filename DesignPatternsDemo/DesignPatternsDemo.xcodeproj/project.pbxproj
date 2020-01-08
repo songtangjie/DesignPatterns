@@ -30,6 +30,11 @@
 		BEEC2A4423C2CB68005A50B3 /* Director.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEC2A4323C2CB68005A50B3 /* Director.m */; };
 		BEEC2A7823C429F4005A50B3 /* StockObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEC2A7723C429F4005A50B3 /* StockObserver.m */; };
 		BEEC2A7B23C42A35005A50B3 /* ObserVerSubject.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEC2A7A23C42A35005A50B3 /* ObserVerSubject.m */; };
+		BEEC2A8923C58568005A50B3 /* IFacroty.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEC2A8823C58568005A50B3 /* IFacroty.m */; };
+		BEEC2A8C23C5858D005A50B3 /* IUser.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEC2A8B23C5858D005A50B3 /* IUser.m */; };
+		BEEC2A8F23C585AB005A50B3 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEC2A8E23C585AB005A50B3 /* User.m */; };
+		BEEC2A9223C588C5005A50B3 /* IDepartment.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEC2A9123C588C5005A50B3 /* IDepartment.m */; };
+		BEEC2A9523C58917005A50B3 /* Department.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEC2A9423C58917005A50B3 /* Department.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -91,6 +96,16 @@
 		BEEC2A7723C429F4005A50B3 /* StockObserver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StockObserver.m; sourceTree = "<group>"; };
 		BEEC2A7923C42A35005A50B3 /* ObserVerSubject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObserVerSubject.h; sourceTree = "<group>"; };
 		BEEC2A7A23C42A35005A50B3 /* ObserVerSubject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObserVerSubject.m; sourceTree = "<group>"; };
+		BEEC2A8723C58568005A50B3 /* IFacroty.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IFacroty.h; sourceTree = "<group>"; };
+		BEEC2A8823C58568005A50B3 /* IFacroty.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IFacroty.m; sourceTree = "<group>"; };
+		BEEC2A8A23C5858D005A50B3 /* IUser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IUser.h; sourceTree = "<group>"; };
+		BEEC2A8B23C5858D005A50B3 /* IUser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IUser.m; sourceTree = "<group>"; };
+		BEEC2A8D23C585AB005A50B3 /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		BEEC2A8E23C585AB005A50B3 /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		BEEC2A9023C588C5005A50B3 /* IDepartment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDepartment.h; sourceTree = "<group>"; };
+		BEEC2A9123C588C5005A50B3 /* IDepartment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IDepartment.m; sourceTree = "<group>"; };
+		BEEC2A9323C58917005A50B3 /* Department.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Department.h; sourceTree = "<group>"; };
+		BEEC2A9423C58917005A50B3 /* Department.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Department.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +206,7 @@
 		BED6CA5423B3021A00AEE675 /* DesignPatternsDemo */ = {
 			isa = PBXGroup;
 			children = (
+				BEEC2A8623C58529005A50B3 /* AbstractFactory */,
 				BEEC2A7223C42471005A50B3 /* Observer */,
 				BEEC2A3B23C2C965005A50B3 /* Builder */,
 				BECE864523C039DA00F63203 /* Facade */,
@@ -252,6 +268,23 @@
 			path = Observer;
 			sourceTree = "<group>";
 		};
+		BEEC2A8623C58529005A50B3 /* AbstractFactory */ = {
+			isa = PBXGroup;
+			children = (
+				BEEC2A8723C58568005A50B3 /* IFacroty.h */,
+				BEEC2A8823C58568005A50B3 /* IFacroty.m */,
+				BEEC2A8A23C5858D005A50B3 /* IUser.h */,
+				BEEC2A8B23C5858D005A50B3 /* IUser.m */,
+				BEEC2A8D23C585AB005A50B3 /* User.h */,
+				BEEC2A8E23C585AB005A50B3 /* User.m */,
+				BEEC2A9023C588C5005A50B3 /* IDepartment.h */,
+				BEEC2A9123C588C5005A50B3 /* IDepartment.m */,
+				BEEC2A9323C58917005A50B3 /* Department.h */,
+				BEEC2A9423C58917005A50B3 /* Department.m */,
+			);
+			path = AbstractFactory;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -309,6 +342,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEEC2A8F23C585AB005A50B3 /* User.m in Sources */,
 				BECE860323BB427A00F63203 /* Prototype.m in Sources */,
 				BECE85FF23BB304E00F63203 /* LeiFeng.m in Sources */,
 				BEEC2A7823C429F4005A50B3 /* StockObserver.m in Sources */,
@@ -317,21 +351,25 @@
 				BEEC2A4423C2CB68005A50B3 /* Director.m in Sources */,
 				BED6CA6923B35DA100AEE675 /* Strategy.m in Sources */,
 				BECE85EE23B996B700F63203 /* Decorator.m in Sources */,
+				BEEC2A8C23C5858D005A50B3 /* IUser.m in Sources */,
 				BECE85FC23BB303500F63203 /* IFactory.m in Sources */,
 				BECE860A23BB4DBB00F63203 /* ConcreteClassA.m in Sources */,
 				BED6CA6423B303AC00AEE675 /* Operation.m in Sources */,
 				BEEC2A7B23C42A35005A50B3 /* ObserVerSubject.m in Sources */,
 				BECE864B23C03A9800F63203 /* Facade.m in Sources */,
 				BECE864823C03A0A00F63203 /* SubSystemOne.m in Sources */,
+				BEEC2A8923C58568005A50B3 /* IFacroty.m in Sources */,
 				BED6CA5E23B3029200AEE675 /* SingleFactory.m in Sources */,
 				BECE85F523B99D7300F63203 /* RealSubject.m in Sources */,
 				BECE85E823B9947300F63203 /* DecoratorComponent.m in Sources */,
 				BECE860723BB4A5200F63203 /* AbstractClass.m in Sources */,
 				BECE85F823B99D9200F63203 /* Proxy.m in Sources */,
+				BEEC2A9223C588C5005A50B3 /* IDepartment.m in Sources */,
 				BECE85EB23B995E800F63203 /* ConcreteComponent.m in Sources */,
 				BED6CA6C23B35E5200AEE675 /* Context.m in Sources */,
 				BED6CA5623B3021A00AEE675 /* main.m in Sources */,
 				BECE85F223B99D4D00F63203 /* Subject.m in Sources */,
+				BEEC2A9523C58917005A50B3 /* Department.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
