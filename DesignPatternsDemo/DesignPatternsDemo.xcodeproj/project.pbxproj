@@ -37,6 +37,9 @@
 		BEEC2A9523C58917005A50B3 /* Department.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEC2A9423C58917005A50B3 /* Department.m */; };
 		BEEC2A9923C5D5A5005A50B3 /* State.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEC2A9823C5D5A5005A50B3 /* State.m */; };
 		BEEC2A9C23C5D5CF005A50B3 /* StateContext.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEC2A9B23C5D5CF005A50B3 /* StateContext.m */; };
+		BEEC2AA023C5DAB0005A50B3 /* Adapter.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEC2A9F23C5DAB0005A50B3 /* Adapter.m */; };
+		BEEC2AA323C5DABC005A50B3 /* Target.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEC2AA223C5DABC005A50B3 /* Target.m */; };
+		BEEC2AA623C5DAF7005A50B3 /* Adaptee.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEC2AA523C5DAF7005A50B3 /* Adaptee.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -112,6 +115,12 @@
 		BEEC2A9823C5D5A5005A50B3 /* State.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = State.m; sourceTree = "<group>"; };
 		BEEC2A9A23C5D5CF005A50B3 /* StateContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StateContext.h; sourceTree = "<group>"; };
 		BEEC2A9B23C5D5CF005A50B3 /* StateContext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StateContext.m; sourceTree = "<group>"; };
+		BEEC2A9E23C5DAB0005A50B3 /* Adapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Adapter.h; sourceTree = "<group>"; };
+		BEEC2A9F23C5DAB0005A50B3 /* Adapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Adapter.m; sourceTree = "<group>"; };
+		BEEC2AA123C5DABC005A50B3 /* Target.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Target.h; sourceTree = "<group>"; };
+		BEEC2AA223C5DABC005A50B3 /* Target.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Target.m; sourceTree = "<group>"; };
+		BEEC2AA423C5DAF7005A50B3 /* Adaptee.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Adaptee.h; sourceTree = "<group>"; };
+		BEEC2AA523C5DAF7005A50B3 /* Adaptee.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Adaptee.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +221,7 @@
 		BED6CA5423B3021A00AEE675 /* DesignPatternsDemo */ = {
 			isa = PBXGroup;
 			children = (
+				BEEC2A9D23C5DA96005A50B3 /* Adapter */,
 				BEEC2A9623C5D504005A50B3 /* State */,
 				BEEC2A8623C58529005A50B3 /* AbstractFactory */,
 				BEEC2A7223C42471005A50B3 /* Observer */,
@@ -303,6 +313,19 @@
 			path = State;
 			sourceTree = "<group>";
 		};
+		BEEC2A9D23C5DA96005A50B3 /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				BEEC2AA123C5DABC005A50B3 /* Target.h */,
+				BEEC2AA223C5DABC005A50B3 /* Target.m */,
+				BEEC2AA423C5DAF7005A50B3 /* Adaptee.h */,
+				BEEC2AA523C5DAF7005A50B3 /* Adaptee.m */,
+				BEEC2A9E23C5DAB0005A50B3 /* Adapter.h */,
+				BEEC2A9F23C5DAB0005A50B3 /* Adapter.m */,
+			);
+			path = Adapter;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -370,10 +393,12 @@
 				BEEC2A4423C2CB68005A50B3 /* Director.m in Sources */,
 				BED6CA6923B35DA100AEE675 /* Strategy.m in Sources */,
 				BECE85EE23B996B700F63203 /* Decorator.m in Sources */,
+				BEEC2AA323C5DABC005A50B3 /* Target.m in Sources */,
 				BEEC2A8C23C5858D005A50B3 /* IUser.m in Sources */,
 				BECE85FC23BB303500F63203 /* IFactory.m in Sources */,
 				BECE860A23BB4DBB00F63203 /* ConcreteClassA.m in Sources */,
 				BED6CA6423B303AC00AEE675 /* Operation.m in Sources */,
+				BEEC2AA023C5DAB0005A50B3 /* Adapter.m in Sources */,
 				BEEC2A7B23C42A35005A50B3 /* ObserVerSubject.m in Sources */,
 				BECE864B23C03A9800F63203 /* Facade.m in Sources */,
 				BECE864823C03A0A00F63203 /* SubSystemOne.m in Sources */,
@@ -388,6 +413,7 @@
 				BEEC2A9C23C5D5CF005A50B3 /* StateContext.m in Sources */,
 				BED6CA6C23B35E5200AEE675 /* Context.m in Sources */,
 				BED6CA5623B3021A00AEE675 /* main.m in Sources */,
+				BEEC2AA623C5DAF7005A50B3 /* Adaptee.m in Sources */,
 				BECE85F223B99D4D00F63203 /* Subject.m in Sources */,
 				BEEC2A9523C58917005A50B3 /* Department.m in Sources */,
 			);

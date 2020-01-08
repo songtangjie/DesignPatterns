@@ -20,6 +20,7 @@
 #import "StockObserver.h"
 #import "IFacroty.h"
 #import "StateContext.h"
+#import "Adapter.h"
 
 void testSingleFactory()
 {
@@ -151,6 +152,12 @@ void testState()
     [c request];
 }
 
+void testAdapter()
+{
+    Target *target = [Adapter new];
+    [target request];
+}
+
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -165,7 +172,8 @@ int main(int argc, const char * argv[]) {
 //        testBuilder();
 //        testObserver();
 //        testAbstractFactory();
-        testState();
+//        testState();
+        testAdapter();
     }
     return 0;
 }
