@@ -21,6 +21,8 @@
 #import "IFacroty.h"
 #import "StateContext.h"
 #import "Adapter.h"
+#import "Caretaker.h"
+#import "Originator.h"
 
 void testSingleFactory()
 {
@@ -158,6 +160,24 @@ void testAdapter()
     [target request];
 }
 
+void testMemento()
+{
+    Originator *o = [Originator new];
+    o.state = @"On";
+    [o show];
+    
+    //保存状态
+    Caretaker *c = [Caretaker new];
+    c.memento = [o createMemento];
+    
+    o.state = @"Off";
+    [o show];
+    
+    //恢复状态
+    [o setMemento:c.memento];
+    [o show];
+}
+
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -173,7 +193,8 @@ int main(int argc, const char * argv[]) {
 //        testObserver();
 //        testAbstractFactory();
 //        testState();
-        testAdapter();
+//        testAdapter();
+        testMemento();
     }
     return 0;
 }
