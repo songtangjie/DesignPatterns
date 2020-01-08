@@ -19,6 +19,7 @@
 #import "Director.h"
 #import "StockObserver.h"
 #import "IFacroty.h"
+#import "StateContext.h"
 
 void testSingleFactory()
 {
@@ -141,9 +142,19 @@ void testAbstractFactory()
     [ide getDepartment:@"1"];
 }
 
+void testState()
+{
+    StateContext *c = [[StateContext alloc] initWithState:[ConcreteStateA new]];
+    [c request];
+    [c request];
+    [c request];
+    [c request];
+}
+
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        testSingleFactory();
+//        testSingleFactory();
 //        testStrategy();
 //        testDecorator();
 //        testProxy();
@@ -154,6 +165,7 @@ int main(int argc, const char * argv[]) {
 //        testBuilder();
 //        testObserver();
 //        testAbstractFactory();
+        testState();
     }
     return 0;
 }

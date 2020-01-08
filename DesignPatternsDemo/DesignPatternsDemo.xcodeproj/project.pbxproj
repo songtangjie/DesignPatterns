@@ -35,6 +35,8 @@
 		BEEC2A8F23C585AB005A50B3 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEC2A8E23C585AB005A50B3 /* User.m */; };
 		BEEC2A9223C588C5005A50B3 /* IDepartment.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEC2A9123C588C5005A50B3 /* IDepartment.m */; };
 		BEEC2A9523C58917005A50B3 /* Department.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEC2A9423C58917005A50B3 /* Department.m */; };
+		BEEC2A9923C5D5A5005A50B3 /* State.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEC2A9823C5D5A5005A50B3 /* State.m */; };
+		BEEC2A9C23C5D5CF005A50B3 /* StateContext.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEC2A9B23C5D5CF005A50B3 /* StateContext.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -106,6 +108,10 @@
 		BEEC2A9123C588C5005A50B3 /* IDepartment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IDepartment.m; sourceTree = "<group>"; };
 		BEEC2A9323C58917005A50B3 /* Department.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Department.h; sourceTree = "<group>"; };
 		BEEC2A9423C58917005A50B3 /* Department.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Department.m; sourceTree = "<group>"; };
+		BEEC2A9723C5D5A5005A50B3 /* State.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = State.h; sourceTree = "<group>"; };
+		BEEC2A9823C5D5A5005A50B3 /* State.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = State.m; sourceTree = "<group>"; };
+		BEEC2A9A23C5D5CF005A50B3 /* StateContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StateContext.h; sourceTree = "<group>"; };
+		BEEC2A9B23C5D5CF005A50B3 /* StateContext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StateContext.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +212,7 @@
 		BED6CA5423B3021A00AEE675 /* DesignPatternsDemo */ = {
 			isa = PBXGroup;
 			children = (
+				BEEC2A9623C5D504005A50B3 /* State */,
 				BEEC2A8623C58529005A50B3 /* AbstractFactory */,
 				BEEC2A7223C42471005A50B3 /* Observer */,
 				BEEC2A3B23C2C965005A50B3 /* Builder */,
@@ -285,6 +292,17 @@
 			path = AbstractFactory;
 			sourceTree = "<group>";
 		};
+		BEEC2A9623C5D504005A50B3 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				BEEC2A9723C5D5A5005A50B3 /* State.h */,
+				BEEC2A9823C5D5A5005A50B3 /* State.m */,
+				BEEC2A9A23C5D5CF005A50B3 /* StateContext.h */,
+				BEEC2A9B23C5D5CF005A50B3 /* StateContext.m */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -348,6 +366,7 @@
 				BEEC2A7823C429F4005A50B3 /* StockObserver.m in Sources */,
 				BEEC2A3E23C2C984005A50B3 /* Product.m in Sources */,
 				BEEC2A4123C2CA51005A50B3 /* Builder.m in Sources */,
+				BEEC2A9923C5D5A5005A50B3 /* State.m in Sources */,
 				BEEC2A4423C2CB68005A50B3 /* Director.m in Sources */,
 				BED6CA6923B35DA100AEE675 /* Strategy.m in Sources */,
 				BECE85EE23B996B700F63203 /* Decorator.m in Sources */,
@@ -366,6 +385,7 @@
 				BECE85F823B99D9200F63203 /* Proxy.m in Sources */,
 				BEEC2A9223C588C5005A50B3 /* IDepartment.m in Sources */,
 				BECE85EB23B995E800F63203 /* ConcreteComponent.m in Sources */,
+				BEEC2A9C23C5D5CF005A50B3 /* StateContext.m in Sources */,
 				BED6CA6C23B35E5200AEE675 /* Context.m in Sources */,
 				BED6CA5623B3021A00AEE675 /* main.m in Sources */,
 				BECE85F223B99D4D00F63203 /* Subject.m in Sources */,
