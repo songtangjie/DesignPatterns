@@ -43,6 +43,7 @@
 		BEEC2AAA23C5DE40005A50B3 /* Originator.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEC2AA923C5DE40005A50B3 /* Originator.m */; };
 		BEEC2AAD23C5DE55005A50B3 /* Memento.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEC2AAC23C5DE55005A50B3 /* Memento.m */; };
 		BEEC2AB023C5DF72005A50B3 /* Caretaker.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEC2AAF23C5DF72005A50B3 /* Caretaker.m */; };
+		BEEC2ACC23C9C98C005A50B3 /* CompositeComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEC2ACB23C9C98C005A50B3 /* CompositeComponent.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -130,6 +131,8 @@
 		BEEC2AAC23C5DE55005A50B3 /* Memento.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Memento.m; sourceTree = "<group>"; };
 		BEEC2AAE23C5DF72005A50B3 /* Caretaker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Caretaker.h; sourceTree = "<group>"; };
 		BEEC2AAF23C5DF72005A50B3 /* Caretaker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Caretaker.m; sourceTree = "<group>"; };
+		BEEC2ACA23C9C98C005A50B3 /* CompositeComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CompositeComponent.h; sourceTree = "<group>"; };
+		BEEC2ACB23C9C98C005A50B3 /* CompositeComponent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CompositeComponent.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,6 +233,7 @@
 		BED6CA5423B3021A00AEE675 /* DesignPatternsDemo */ = {
 			isa = PBXGroup;
 			children = (
+				BEEC2AC623C9C8EE005A50B3 /* Composite */,
 				BEEC2AA723C5DE1F005A50B3 /* Memento */,
 				BEEC2A9D23C5DA96005A50B3 /* Adapter */,
 				BEEC2A9623C5D504005A50B3 /* State */,
@@ -349,6 +353,15 @@
 			path = Memento;
 			sourceTree = "<group>";
 		};
+		BEEC2AC623C9C8EE005A50B3 /* Composite */ = {
+			isa = PBXGroup;
+			children = (
+				BEEC2ACA23C9C98C005A50B3 /* CompositeComponent.h */,
+				BEEC2ACB23C9C98C005A50B3 /* CompositeComponent.m */,
+			);
+			path = Composite;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -440,6 +453,7 @@
 				BEEC2AA623C5DAF7005A50B3 /* Adaptee.m in Sources */,
 				BEEC2AB023C5DF72005A50B3 /* Caretaker.m in Sources */,
 				BECE85F223B99D4D00F63203 /* Subject.m in Sources */,
+				BEEC2ACC23C9C98C005A50B3 /* CompositeComponent.m in Sources */,
 				BEEC2A9523C58917005A50B3 /* Department.m in Sources */,
 				BEEC2AAA23C5DE40005A50B3 /* Originator.m in Sources */,
 			);

@@ -23,6 +23,7 @@
 #import "Adapter.h"
 #import "Caretaker.h"
 #import "Originator.h"
+#import "CompositeComponent.h"
 
 void testSingleFactory()
 {
@@ -178,6 +179,33 @@ void testMemento()
     [o show];
 }
 
+void testComposite()
+{
+    Composite *root = [[Composite alloc] initWithName:@"root"];
+    [root add:[[Leaf alloc] initWithName:@"Leaf A"]];
+    [root add:[[Leaf alloc] initWithName:@"Leaf B"]];
+    
+    Composite *comp = [[Composite alloc] initWithName:@"Composite X"];
+    [comp add:[[Leaf alloc] initWithName:@"Leaf XA"]];
+    [comp add:[[Leaf alloc] initWithName:@"Leaf XB"]];
+    
+    [root add:comp];
+    
+    Composite *comp2 = [[Composite alloc] initWithName:@"Composite XY"];
+    [comp2 add:[[Leaf alloc] initWithName:@"Leaf XYA"]];
+    [comp2 add:[[Leaf alloc] initWithName:@"Leaf XYB"]];
+    
+    [comp add:comp2];
+    
+    [root add:[[Leaf alloc] initWithName:@"Leaf C"]];
+    
+    Leaf *leaf = [[Leaf alloc] initWithName:@"Leaf D"];
+    [root add:leaf];
+    [root remove:leaf];
+    
+    [root display:1];
+}
+
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -194,7 +222,8 @@ int main(int argc, const char * argv[]) {
 //        testAbstractFactory();
 //        testState();
 //        testAdapter();
-        testMemento();
+//        testMemento();
+        testComposite();
     }
     return 0;
 }
