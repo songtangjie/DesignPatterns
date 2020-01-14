@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		BEA0422A23CD5D400009167F /* Iterator.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA0422923CD5D400009167F /* Iterator.m */; };
 		BEA0422D23CD5DB60009167F /* Aggregate.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA0422C23CD5DB60009167F /* Aggregate.m */; };
+		BEA0423123CD74510009167F /* SingleTon.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA0423023CD74510009167F /* SingleTon.m */; };
 		BECE85E823B9947300F63203 /* DecoratorComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = BECE85E723B9947300F63203 /* DecoratorComponent.m */; };
 		BECE85EB23B995E800F63203 /* ConcreteComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = BECE85EA23B995E800F63203 /* ConcreteComponent.m */; };
 		BECE85EE23B996B700F63203 /* Decorator.m in Sources */ = {isa = PBXBuildFile; fileRef = BECE85ED23B996B700F63203 /* Decorator.m */; };
@@ -65,6 +66,8 @@
 		BEA0422923CD5D400009167F /* Iterator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Iterator.m; sourceTree = "<group>"; };
 		BEA0422B23CD5DB60009167F /* Aggregate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Aggregate.h; sourceTree = "<group>"; };
 		BEA0422C23CD5DB60009167F /* Aggregate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Aggregate.m; sourceTree = "<group>"; };
+		BEA0422F23CD74510009167F /* SingleTon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingleTon.h; sourceTree = "<group>"; };
+		BEA0423023CD74510009167F /* SingleTon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingleTon.m; sourceTree = "<group>"; };
 		BECE85E623B9947300F63203 /* DecoratorComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DecoratorComponent.h; sourceTree = "<group>"; };
 		BECE85E723B9947300F63203 /* DecoratorComponent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DecoratorComponent.m; sourceTree = "<group>"; };
 		BECE85E923B995E800F63203 /* ConcreteComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConcreteComponent.h; sourceTree = "<group>"; };
@@ -163,6 +166,15 @@
 			path = Iterator;
 			sourceTree = "<group>";
 		};
+		BEA0422E23CD74370009167F /* SingleTon */ = {
+			isa = PBXGroup;
+			children = (
+				BEA0422F23CD74510009167F /* SingleTon.h */,
+				BEA0423023CD74510009167F /* SingleTon.m */,
+			);
+			path = SingleTon;
+			sourceTree = "<group>";
+		};
 		BECE85E523B9942C00F63203 /* Decorator */ = {
 			isa = PBXGroup;
 			children = (
@@ -250,6 +262,7 @@
 		BED6CA5423B3021A00AEE675 /* DesignPatternsDemo */ = {
 			isa = PBXGroup;
 			children = (
+				BEA0422E23CD74370009167F /* SingleTon */,
 				BEA0422723CD5D270009167F /* Iterator */,
 				BEEC2AC623C9C8EE005A50B3 /* Composite */,
 				BEEC2AA723C5DE1F005A50B3 /* Memento */,
@@ -438,6 +451,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEEC2A8F23C585AB005A50B3 /* User.m in Sources */,
+				BEA0423123CD74510009167F /* SingleTon.m in Sources */,
 				BECE860323BB427A00F63203 /* Prototype.m in Sources */,
 				BECE85FF23BB304E00F63203 /* LeiFeng.m in Sources */,
 				BEEC2A7823C429F4005A50B3 /* StockObserver.m in Sources */,

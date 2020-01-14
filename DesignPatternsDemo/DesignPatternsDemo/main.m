@@ -25,6 +25,7 @@
 #import "Originator.h"
 #import "CompositeComponent.h"
 #import "Iterator.h"
+#import "SingleTon.h"
 
 void testSingleFactory()
 {
@@ -225,6 +226,16 @@ void testIterator()
     }
 }
 
+void testSingleTon()
+{
+    SingleTon *singleTon1 = [SingleTon shared];
+    singleTon1.text = @"test1";
+    NSLog(@"%@---%@",singleTon1,singleTon1.text);
+    
+    SingleTon *singleTon2 = [SingleTon shared];
+    NSLog(@"%@---%@",singleTon2,singleTon2.text);
+}
+
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -243,7 +254,8 @@ int main(int argc, const char * argv[]) {
 //        testAdapter();
 //        testMemento();
 //        testComposite();
-        testIterator();
+//        testIterator();
+        testSingleTon();
     }
     return 0;
 }
