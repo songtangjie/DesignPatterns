@@ -24,6 +24,7 @@
 #import "Caretaker.h"
 #import "Originator.h"
 #import "CompositeComponent.h"
+#import "Iterator.h"
 
 void testSingleFactory()
 {
@@ -206,6 +207,24 @@ void testComposite()
     [root display:1];
 }
 
+void testIterator()
+{
+    ConcreteAggregate *a = [ConcreteAggregate new];
+    [a addObject:0 value:@"大鸟"];
+    [a addObject:1 value:@"小菜"];
+    [a addObject:2 value:@"行李"];
+    [a addObject:3 value:@"老外"];
+    [a addObject:4 value:@"公交内部员工"];
+    [a addObject:5 value:@"小偷"];
+    
+    Iterator *i = [[ConcreteIterator alloc] initWithAggregate:a];
+    NSObject *item = [i first];
+    while (![i isDone]) {
+        NSLog(@"%@请买车票",[i currentItem]);
+        [i next];
+    }
+}
+
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -223,7 +242,8 @@ int main(int argc, const char * argv[]) {
 //        testState();
 //        testAdapter();
 //        testMemento();
-        testComposite();
+//        testComposite();
+        testIterator();
     }
     return 0;
 }

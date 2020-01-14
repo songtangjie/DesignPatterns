@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BEA0422A23CD5D400009167F /* Iterator.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA0422923CD5D400009167F /* Iterator.m */; };
+		BEA0422D23CD5DB60009167F /* Aggregate.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA0422C23CD5DB60009167F /* Aggregate.m */; };
 		BECE85E823B9947300F63203 /* DecoratorComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = BECE85E723B9947300F63203 /* DecoratorComponent.m */; };
 		BECE85EB23B995E800F63203 /* ConcreteComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = BECE85EA23B995E800F63203 /* ConcreteComponent.m */; };
 		BECE85EE23B996B700F63203 /* Decorator.m in Sources */ = {isa = PBXBuildFile; fileRef = BECE85ED23B996B700F63203 /* Decorator.m */; };
@@ -59,6 +61,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BEA0422823CD5D400009167F /* Iterator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Iterator.h; sourceTree = "<group>"; };
+		BEA0422923CD5D400009167F /* Iterator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Iterator.m; sourceTree = "<group>"; };
+		BEA0422B23CD5DB60009167F /* Aggregate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Aggregate.h; sourceTree = "<group>"; };
+		BEA0422C23CD5DB60009167F /* Aggregate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Aggregate.m; sourceTree = "<group>"; };
 		BECE85E623B9947300F63203 /* DecoratorComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DecoratorComponent.h; sourceTree = "<group>"; };
 		BECE85E723B9947300F63203 /* DecoratorComponent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DecoratorComponent.m; sourceTree = "<group>"; };
 		BECE85E923B995E800F63203 /* ConcreteComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConcreteComponent.h; sourceTree = "<group>"; };
@@ -146,6 +152,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BEA0422723CD5D270009167F /* Iterator */ = {
+			isa = PBXGroup;
+			children = (
+				BEA0422823CD5D400009167F /* Iterator.h */,
+				BEA0422923CD5D400009167F /* Iterator.m */,
+				BEA0422B23CD5DB60009167F /* Aggregate.h */,
+				BEA0422C23CD5DB60009167F /* Aggregate.m */,
+			);
+			path = Iterator;
+			sourceTree = "<group>";
+		};
 		BECE85E523B9942C00F63203 /* Decorator */ = {
 			isa = PBXGroup;
 			children = (
@@ -233,6 +250,7 @@
 		BED6CA5423B3021A00AEE675 /* DesignPatternsDemo */ = {
 			isa = PBXGroup;
 			children = (
+				BEA0422723CD5D270009167F /* Iterator */,
 				BEEC2AC623C9C8EE005A50B3 /* Composite */,
 				BEEC2AA723C5DE1F005A50B3 /* Memento */,
 				BEEC2A9D23C5DA96005A50B3 /* Adapter */,
@@ -436,6 +454,8 @@
 				BED6CA6423B303AC00AEE675 /* Operation.m in Sources */,
 				BEEC2AA023C5DAB0005A50B3 /* Adapter.m in Sources */,
 				BEEC2A7B23C42A35005A50B3 /* ObserVerSubject.m in Sources */,
+				BEA0422A23CD5D400009167F /* Iterator.m in Sources */,
+				BEA0422D23CD5DB60009167F /* Aggregate.m in Sources */,
 				BECE864B23C03A9800F63203 /* Facade.m in Sources */,
 				BECE864823C03A0A00F63203 /* SubSystemOne.m in Sources */,
 				BEEC2A8923C58568005A50B3 /* IFacroty.m in Sources */,
