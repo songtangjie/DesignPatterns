@@ -28,6 +28,7 @@
 #import "SingleTon.h"
 #import "Abstraction.h"
 #import "Invoker.h"
+#import "Handler.h"
 
 void testSingleFactory()
 {
@@ -259,6 +260,20 @@ void testCommand()
     [i executeCommand];
 }
 
+void testHandler()
+{
+    Handler *h1 = [ConcreteHandler1 new];
+    Handler *h2 = [ConcreteHandler2 new];
+    Handler *h3 = [ConcreteHandler3 new];
+    [h1 setSuccessor:h2];
+    [h2 setSuccessor:h3];
+    
+    NSArray *requests = @[@2,@5,@14,@22,@18,@3,@27,@20];
+    
+    for (NSNumber *request in requests) {
+        [h1 handleRequest:[request intValue]];
+    }
+}
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -280,7 +295,8 @@ int main(int argc, const char * argv[]) {
 //        testIterator();
 //        testSingleTon();
 //        testBridge();
-        testCommand();
+//        testCommand();
+        testHandler();
     }
     return 0;
 }

@@ -15,6 +15,7 @@
 		BEA0423C23CD99120009167F /* Command.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA0423B23CD99120009167F /* Command.m */; };
 		BEA0423F23CD993D0009167F /* Receiver.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA0423E23CD993D0009167F /* Receiver.m */; };
 		BEA0424223CD99640009167F /* Invoker.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA0424123CD99640009167F /* Invoker.m */; };
+		BEA0424923CD9EB00009167F /* Handler.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA0424823CD9EB00009167F /* Handler.m */; };
 		BECE85E823B9947300F63203 /* DecoratorComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = BECE85E723B9947300F63203 /* DecoratorComponent.m */; };
 		BECE85EB23B995E800F63203 /* ConcreteComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = BECE85EA23B995E800F63203 /* ConcreteComponent.m */; };
 		BECE85EE23B996B700F63203 /* Decorator.m in Sources */ = {isa = PBXBuildFile; fileRef = BECE85ED23B996B700F63203 /* Decorator.m */; };
@@ -83,6 +84,8 @@
 		BEA0423E23CD993D0009167F /* Receiver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Receiver.m; sourceTree = "<group>"; };
 		BEA0424023CD99640009167F /* Invoker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Invoker.h; sourceTree = "<group>"; };
 		BEA0424123CD99640009167F /* Invoker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Invoker.m; sourceTree = "<group>"; };
+		BEA0424723CD9EB00009167F /* Handler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Handler.h; sourceTree = "<group>"; };
+		BEA0424823CD9EB00009167F /* Handler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Handler.m; sourceTree = "<group>"; };
 		BECE85E623B9947300F63203 /* DecoratorComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DecoratorComponent.h; sourceTree = "<group>"; };
 		BECE85E723B9947300F63203 /* DecoratorComponent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DecoratorComponent.m; sourceTree = "<group>"; };
 		BECE85E923B995E800F63203 /* ConcreteComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConcreteComponent.h; sourceTree = "<group>"; };
@@ -214,6 +217,15 @@
 			path = Command;
 			sourceTree = "<group>";
 		};
+		BEA0424323CD9E720009167F /* ChainOfResponsibility */ = {
+			isa = PBXGroup;
+			children = (
+				BEA0424723CD9EB00009167F /* Handler.h */,
+				BEA0424823CD9EB00009167F /* Handler.m */,
+			);
+			path = ChainOfResponsibility;
+			sourceTree = "<group>";
+		};
 		BECE85E523B9942C00F63203 /* Decorator */ = {
 			isa = PBXGroup;
 			children = (
@@ -301,6 +313,7 @@
 		BED6CA5423B3021A00AEE675 /* DesignPatternsDemo */ = {
 			isa = PBXGroup;
 			children = (
+				BEA0424323CD9E720009167F /* ChainOfResponsibility */,
 				BEA0423923CD98F80009167F /* Command */,
 				BEA0423223CD783B0009167F /* Bridge */,
 				BEA0422E23CD74370009167F /* SingleTon */,
@@ -517,6 +530,7 @@
 				BEA0422D23CD5DB60009167F /* Aggregate.m in Sources */,
 				BECE864B23C03A9800F63203 /* Facade.m in Sources */,
 				BECE864823C03A0A00F63203 /* SubSystemOne.m in Sources */,
+				BEA0424923CD9EB00009167F /* Handler.m in Sources */,
 				BEEC2A8923C58568005A50B3 /* IFacroty.m in Sources */,
 				BED6CA5E23B3029200AEE675 /* SingleFactory.m in Sources */,
 				BECE85F523B99D7300F63203 /* RealSubject.m in Sources */,
