@@ -12,6 +12,9 @@
 		BEA0423123CD74510009167F /* SingleTon.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA0423023CD74510009167F /* SingleTon.m */; };
 		BEA0423523CD78560009167F /* Implementor.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA0423423CD78560009167F /* Implementor.m */; };
 		BEA0423823CD78B90009167F /* Abstraction.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA0423723CD78B90009167F /* Abstraction.m */; };
+		BEA0423C23CD99120009167F /* Command.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA0423B23CD99120009167F /* Command.m */; };
+		BEA0423F23CD993D0009167F /* Receiver.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA0423E23CD993D0009167F /* Receiver.m */; };
+		BEA0424223CD99640009167F /* Invoker.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA0424123CD99640009167F /* Invoker.m */; };
 		BECE85E823B9947300F63203 /* DecoratorComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = BECE85E723B9947300F63203 /* DecoratorComponent.m */; };
 		BECE85EB23B995E800F63203 /* ConcreteComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = BECE85EA23B995E800F63203 /* ConcreteComponent.m */; };
 		BECE85EE23B996B700F63203 /* Decorator.m in Sources */ = {isa = PBXBuildFile; fileRef = BECE85ED23B996B700F63203 /* Decorator.m */; };
@@ -74,6 +77,12 @@
 		BEA0423423CD78560009167F /* Implementor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Implementor.m; sourceTree = "<group>"; };
 		BEA0423623CD78B90009167F /* Abstraction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Abstraction.h; sourceTree = "<group>"; };
 		BEA0423723CD78B90009167F /* Abstraction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Abstraction.m; sourceTree = "<group>"; };
+		BEA0423A23CD99120009167F /* Command.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Command.h; sourceTree = "<group>"; };
+		BEA0423B23CD99120009167F /* Command.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Command.m; sourceTree = "<group>"; };
+		BEA0423D23CD993D0009167F /* Receiver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Receiver.h; sourceTree = "<group>"; };
+		BEA0423E23CD993D0009167F /* Receiver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Receiver.m; sourceTree = "<group>"; };
+		BEA0424023CD99640009167F /* Invoker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Invoker.h; sourceTree = "<group>"; };
+		BEA0424123CD99640009167F /* Invoker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Invoker.m; sourceTree = "<group>"; };
 		BECE85E623B9947300F63203 /* DecoratorComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DecoratorComponent.h; sourceTree = "<group>"; };
 		BECE85E723B9947300F63203 /* DecoratorComponent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DecoratorComponent.m; sourceTree = "<group>"; };
 		BECE85E923B995E800F63203 /* ConcreteComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConcreteComponent.h; sourceTree = "<group>"; };
@@ -192,6 +201,19 @@
 			path = Bridge;
 			sourceTree = "<group>";
 		};
+		BEA0423923CD98F80009167F /* Command */ = {
+			isa = PBXGroup;
+			children = (
+				BEA0423A23CD99120009167F /* Command.h */,
+				BEA0423B23CD99120009167F /* Command.m */,
+				BEA0423D23CD993D0009167F /* Receiver.h */,
+				BEA0423E23CD993D0009167F /* Receiver.m */,
+				BEA0424023CD99640009167F /* Invoker.h */,
+				BEA0424123CD99640009167F /* Invoker.m */,
+			);
+			path = Command;
+			sourceTree = "<group>";
+		};
 		BECE85E523B9942C00F63203 /* Decorator */ = {
 			isa = PBXGroup;
 			children = (
@@ -279,6 +301,7 @@
 		BED6CA5423B3021A00AEE675 /* DesignPatternsDemo */ = {
 			isa = PBXGroup;
 			children = (
+				BEA0423923CD98F80009167F /* Command */,
 				BEA0423223CD783B0009167F /* Bridge */,
 				BEA0422E23CD74370009167F /* SingleTon */,
 				BEA0422723CD5D270009167F /* Iterator */,
@@ -471,12 +494,14 @@
 				BEEC2A8F23C585AB005A50B3 /* User.m in Sources */,
 				BEA0423123CD74510009167F /* SingleTon.m in Sources */,
 				BECE860323BB427A00F63203 /* Prototype.m in Sources */,
+				BEA0423C23CD99120009167F /* Command.m in Sources */,
 				BECE85FF23BB304E00F63203 /* LeiFeng.m in Sources */,
 				BEEC2A7823C429F4005A50B3 /* StockObserver.m in Sources */,
 				BEEC2A3E23C2C984005A50B3 /* Product.m in Sources */,
 				BEEC2A4123C2CA51005A50B3 /* Builder.m in Sources */,
 				BEEC2A9923C5D5A5005A50B3 /* State.m in Sources */,
 				BEEC2A4423C2CB68005A50B3 /* Director.m in Sources */,
+				BEA0423F23CD993D0009167F /* Receiver.m in Sources */,
 				BED6CA6923B35DA100AEE675 /* Strategy.m in Sources */,
 				BECE85EE23B996B700F63203 /* Decorator.m in Sources */,
 				BEEC2AA323C5DABC005A50B3 /* Target.m in Sources */,
@@ -508,6 +533,7 @@
 				BEEC2AB023C5DF72005A50B3 /* Caretaker.m in Sources */,
 				BECE85F223B99D4D00F63203 /* Subject.m in Sources */,
 				BEEC2ACC23C9C98C005A50B3 /* CompositeComponent.m in Sources */,
+				BEA0424223CD99640009167F /* Invoker.m in Sources */,
 				BEEC2A9523C58917005A50B3 /* Department.m in Sources */,
 				BEEC2AAA23C5DE40005A50B3 /* Originator.m in Sources */,
 			);

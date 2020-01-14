@@ -27,6 +27,7 @@
 #import "Iterator.h"
 #import "SingleTon.h"
 #import "Abstraction.h"
+#import "Invoker.h"
 
 void testSingleFactory()
 {
@@ -248,6 +249,16 @@ void testBridge()
     [ab operation];
 }
 
+void testCommand()
+{
+    Receiver *r = [Receiver new];
+    Command *c = [[ConcreteCommand alloc] initWithCommand:r];
+    Invoker *i = [Invoker new];
+    
+    [i setCommand:c];
+    [i executeCommand];
+}
+
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -268,7 +279,8 @@ int main(int argc, const char * argv[]) {
 //        testComposite();
 //        testIterator();
 //        testSingleTon();
-        testBridge();
+//        testBridge();
+        testCommand();
     }
     return 0;
 }
