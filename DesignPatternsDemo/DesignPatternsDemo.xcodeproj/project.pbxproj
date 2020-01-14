@@ -10,6 +10,8 @@
 		BEA0422A23CD5D400009167F /* Iterator.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA0422923CD5D400009167F /* Iterator.m */; };
 		BEA0422D23CD5DB60009167F /* Aggregate.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA0422C23CD5DB60009167F /* Aggregate.m */; };
 		BEA0423123CD74510009167F /* SingleTon.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA0423023CD74510009167F /* SingleTon.m */; };
+		BEA0423523CD78560009167F /* Implementor.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA0423423CD78560009167F /* Implementor.m */; };
+		BEA0423823CD78B90009167F /* Abstraction.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA0423723CD78B90009167F /* Abstraction.m */; };
 		BECE85E823B9947300F63203 /* DecoratorComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = BECE85E723B9947300F63203 /* DecoratorComponent.m */; };
 		BECE85EB23B995E800F63203 /* ConcreteComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = BECE85EA23B995E800F63203 /* ConcreteComponent.m */; };
 		BECE85EE23B996B700F63203 /* Decorator.m in Sources */ = {isa = PBXBuildFile; fileRef = BECE85ED23B996B700F63203 /* Decorator.m */; };
@@ -68,6 +70,10 @@
 		BEA0422C23CD5DB60009167F /* Aggregate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Aggregate.m; sourceTree = "<group>"; };
 		BEA0422F23CD74510009167F /* SingleTon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingleTon.h; sourceTree = "<group>"; };
 		BEA0423023CD74510009167F /* SingleTon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingleTon.m; sourceTree = "<group>"; };
+		BEA0423323CD78560009167F /* Implementor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Implementor.h; sourceTree = "<group>"; };
+		BEA0423423CD78560009167F /* Implementor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Implementor.m; sourceTree = "<group>"; };
+		BEA0423623CD78B90009167F /* Abstraction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Abstraction.h; sourceTree = "<group>"; };
+		BEA0423723CD78B90009167F /* Abstraction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Abstraction.m; sourceTree = "<group>"; };
 		BECE85E623B9947300F63203 /* DecoratorComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DecoratorComponent.h; sourceTree = "<group>"; };
 		BECE85E723B9947300F63203 /* DecoratorComponent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DecoratorComponent.m; sourceTree = "<group>"; };
 		BECE85E923B995E800F63203 /* ConcreteComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConcreteComponent.h; sourceTree = "<group>"; };
@@ -175,6 +181,17 @@
 			path = SingleTon;
 			sourceTree = "<group>";
 		};
+		BEA0423223CD783B0009167F /* Bridge */ = {
+			isa = PBXGroup;
+			children = (
+				BEA0423323CD78560009167F /* Implementor.h */,
+				BEA0423423CD78560009167F /* Implementor.m */,
+				BEA0423623CD78B90009167F /* Abstraction.h */,
+				BEA0423723CD78B90009167F /* Abstraction.m */,
+			);
+			path = Bridge;
+			sourceTree = "<group>";
+		};
 		BECE85E523B9942C00F63203 /* Decorator */ = {
 			isa = PBXGroup;
 			children = (
@@ -262,6 +279,7 @@
 		BED6CA5423B3021A00AEE675 /* DesignPatternsDemo */ = {
 			isa = PBXGroup;
 			children = (
+				BEA0423223CD783B0009167F /* Bridge */,
 				BEA0422E23CD74370009167F /* SingleTon */,
 				BEA0422723CD5D270009167F /* Iterator */,
 				BEEC2AC623C9C8EE005A50B3 /* Composite */,
@@ -464,7 +482,9 @@
 				BEEC2AA323C5DABC005A50B3 /* Target.m in Sources */,
 				BEEC2A8C23C5858D005A50B3 /* IUser.m in Sources */,
 				BECE85FC23BB303500F63203 /* IFactory.m in Sources */,
+				BEA0423523CD78560009167F /* Implementor.m in Sources */,
 				BECE860A23BB4DBB00F63203 /* ConcreteClassA.m in Sources */,
+				BEA0423823CD78B90009167F /* Abstraction.m in Sources */,
 				BED6CA6423B303AC00AEE675 /* Operation.m in Sources */,
 				BEEC2AA023C5DAB0005A50B3 /* Adapter.m in Sources */,
 				BEEC2A7B23C42A35005A50B3 /* ObserVerSubject.m in Sources */,

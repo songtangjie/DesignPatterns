@@ -26,6 +26,7 @@
 #import "CompositeComponent.h"
 #import "Iterator.h"
 #import "SingleTon.h"
+#import "Abstraction.h"
 
 void testSingleFactory()
 {
@@ -236,6 +237,17 @@ void testSingleTon()
     NSLog(@"%@---%@",singleTon2,singleTon2.text);
 }
 
+void testBridge()
+{
+    Abstraction *ab = [RefinedAbstraction new];
+    
+    [ab setImplementor:[ConcreteImplementorA new]];
+    [ab operation];
+    
+    [ab setImplementor:[ConcreteImplementorB new]];
+    [ab operation];
+}
+
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -255,7 +267,8 @@ int main(int argc, const char * argv[]) {
 //        testMemento();
 //        testComposite();
 //        testIterator();
-        testSingleTon();
+//        testSingleTon();
+        testBridge();
     }
     return 0;
 }
