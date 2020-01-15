@@ -16,6 +16,8 @@
 		BEA0423F23CD993D0009167F /* Receiver.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA0423E23CD993D0009167F /* Receiver.m */; };
 		BEA0424223CD99640009167F /* Invoker.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA0424123CD99640009167F /* Invoker.m */; };
 		BEA0424923CD9EB00009167F /* Handler.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA0424823CD9EB00009167F /* Handler.m */; };
+		BEA0424D23CEC73C0009167F /* Mediator.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA0424C23CEC73C0009167F /* Mediator.m */; };
+		BEA0425023CEC77C0009167F /* Colleague.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA0424F23CEC77C0009167F /* Colleague.m */; };
 		BECE85E823B9947300F63203 /* DecoratorComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = BECE85E723B9947300F63203 /* DecoratorComponent.m */; };
 		BECE85EB23B995E800F63203 /* ConcreteComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = BECE85EA23B995E800F63203 /* ConcreteComponent.m */; };
 		BECE85EE23B996B700F63203 /* Decorator.m in Sources */ = {isa = PBXBuildFile; fileRef = BECE85ED23B996B700F63203 /* Decorator.m */; };
@@ -86,6 +88,10 @@
 		BEA0424123CD99640009167F /* Invoker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Invoker.m; sourceTree = "<group>"; };
 		BEA0424723CD9EB00009167F /* Handler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Handler.h; sourceTree = "<group>"; };
 		BEA0424823CD9EB00009167F /* Handler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Handler.m; sourceTree = "<group>"; };
+		BEA0424B23CEC73C0009167F /* Mediator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mediator.h; sourceTree = "<group>"; };
+		BEA0424C23CEC73C0009167F /* Mediator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Mediator.m; sourceTree = "<group>"; };
+		BEA0424E23CEC77C0009167F /* Colleague.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Colleague.h; sourceTree = "<group>"; };
+		BEA0424F23CEC77C0009167F /* Colleague.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Colleague.m; sourceTree = "<group>"; };
 		BECE85E623B9947300F63203 /* DecoratorComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DecoratorComponent.h; sourceTree = "<group>"; };
 		BECE85E723B9947300F63203 /* DecoratorComponent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DecoratorComponent.m; sourceTree = "<group>"; };
 		BECE85E923B995E800F63203 /* ConcreteComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConcreteComponent.h; sourceTree = "<group>"; };
@@ -226,6 +232,17 @@
 			path = ChainOfResponsibility;
 			sourceTree = "<group>";
 		};
+		BEA0424A23CEC7290009167F /* Mediator */ = {
+			isa = PBXGroup;
+			children = (
+				BEA0424B23CEC73C0009167F /* Mediator.h */,
+				BEA0424C23CEC73C0009167F /* Mediator.m */,
+				BEA0424E23CEC77C0009167F /* Colleague.h */,
+				BEA0424F23CEC77C0009167F /* Colleague.m */,
+			);
+			path = Mediator;
+			sourceTree = "<group>";
+		};
 		BECE85E523B9942C00F63203 /* Decorator */ = {
 			isa = PBXGroup;
 			children = (
@@ -313,6 +330,7 @@
 		BED6CA5423B3021A00AEE675 /* DesignPatternsDemo */ = {
 			isa = PBXGroup;
 			children = (
+				BEA0424A23CEC7290009167F /* Mediator */,
 				BEA0424323CD9E720009167F /* ChainOfResponsibility */,
 				BEA0423923CD98F80009167F /* Command */,
 				BEA0423223CD783B0009167F /* Bridge */,
@@ -543,9 +561,11 @@
 				BEEC2A9C23C5D5CF005A50B3 /* StateContext.m in Sources */,
 				BED6CA6C23B35E5200AEE675 /* Context.m in Sources */,
 				BED6CA5623B3021A00AEE675 /* main.m in Sources */,
+				BEA0425023CEC77C0009167F /* Colleague.m in Sources */,
 				BEEC2AA623C5DAF7005A50B3 /* Adaptee.m in Sources */,
 				BEEC2AB023C5DF72005A50B3 /* Caretaker.m in Sources */,
 				BECE85F223B99D4D00F63203 /* Subject.m in Sources */,
+				BEA0424D23CEC73C0009167F /* Mediator.m in Sources */,
 				BEEC2ACC23C9C98C005A50B3 /* CompositeComponent.m in Sources */,
 				BEA0424223CD99640009167F /* Invoker.m in Sources */,
 				BEEC2A9523C58917005A50B3 /* Department.m in Sources */,

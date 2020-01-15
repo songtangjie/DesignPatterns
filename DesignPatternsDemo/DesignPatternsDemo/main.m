@@ -29,6 +29,7 @@
 #import "Abstraction.h"
 #import "Invoker.h"
 #import "Handler.h"
+#import "Mediator.h"
 
 void testSingleFactory()
 {
@@ -275,6 +276,20 @@ void testHandler()
     }
 }
 
+void testMediator()
+{
+    ConcreteMediator *m = [ConcreteMediator new];
+    
+    ConcreteColleague1 *c1 = [[ConcreteColleague1 alloc] initWithMediator:m];
+    ConcreteColleague2 *c2 = [[ConcreteColleague2 alloc] initWithMediator:m];
+    
+    [m setColleague1:c1];
+    [m setColleague2:c2];
+    
+    [c1 send:@"吃过饭了吗？"];
+    [c2 send:@"没有呢，你打算请客？"];
+}
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
 //        testSingleFactory();
@@ -296,7 +311,8 @@ int main(int argc, const char * argv[]) {
 //        testSingleTon();
 //        testBridge();
 //        testCommand();
-        testHandler();
+//        testHandler();
+        testMediator();
     }
     return 0;
 }
