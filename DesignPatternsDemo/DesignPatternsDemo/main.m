@@ -31,6 +31,7 @@
 #import "Handler.h"
 #import "Mediator.h"
 #import "FlyweightFactory.h"
+#import "AbstractExpression.h"
 
 void testSingleFactory()
 {
@@ -311,6 +312,20 @@ void testFlyweight()
     [uf operation: --extrinsicstate];
 }
 
+void testInterpreter()
+{
+    InterpreterContext *context = [InterpreterContext new];
+    NSMutableArray<AbstractExpression *> *list = [NSMutableArray array];
+    [list addObject:[TerminalExpression new]];
+    [list addObject:[NonterminalExpression new]];
+    [list addObject:[TerminalExpression new]];
+    [list addObject:[TerminalExpression new]];
+    
+    for (AbstractExpression *exp in list) {
+        [exp interpreter:context];
+    }
+}
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
 //        testSingleFactory();
@@ -334,7 +349,8 @@ int main(int argc, const char * argv[]) {
 //        testCommand();
 //        testHandler();
 //        testMediator();
-        testFlyweight();
+//        testFlyweight();
+        testInterpreter();
     }
     return 0;
 }

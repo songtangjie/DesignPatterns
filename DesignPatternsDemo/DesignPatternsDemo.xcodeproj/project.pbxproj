@@ -20,6 +20,8 @@
 		BEA0425023CEC77C0009167F /* Colleague.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA0424F23CEC77C0009167F /* Colleague.m */; };
 		BEA0425423CEEF640009167F /* Flyweight.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA0425323CEEF640009167F /* Flyweight.m */; };
 		BEA0425723CEEFEC0009167F /* FlyweightFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA0425623CEEFEC0009167F /* FlyweightFactory.m */; };
+		BEA0425B23CF0AC00009167F /* AbstractExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA0425A23CF0AC00009167F /* AbstractExpression.m */; };
+		BEA0425E23CF0AE10009167F /* InterpreterContext.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA0425D23CF0AE10009167F /* InterpreterContext.m */; };
 		BECE85E823B9947300F63203 /* DecoratorComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = BECE85E723B9947300F63203 /* DecoratorComponent.m */; };
 		BECE85EB23B995E800F63203 /* ConcreteComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = BECE85EA23B995E800F63203 /* ConcreteComponent.m */; };
 		BECE85EE23B996B700F63203 /* Decorator.m in Sources */ = {isa = PBXBuildFile; fileRef = BECE85ED23B996B700F63203 /* Decorator.m */; };
@@ -98,6 +100,10 @@
 		BEA0425323CEEF640009167F /* Flyweight.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Flyweight.m; sourceTree = "<group>"; };
 		BEA0425523CEEFEC0009167F /* FlyweightFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlyweightFactory.h; sourceTree = "<group>"; };
 		BEA0425623CEEFEC0009167F /* FlyweightFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlyweightFactory.m; sourceTree = "<group>"; };
+		BEA0425923CF0AC00009167F /* AbstractExpression.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbstractExpression.h; sourceTree = "<group>"; };
+		BEA0425A23CF0AC00009167F /* AbstractExpression.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AbstractExpression.m; sourceTree = "<group>"; };
+		BEA0425C23CF0AE10009167F /* InterpreterContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterpreterContext.h; sourceTree = "<group>"; };
+		BEA0425D23CF0AE10009167F /* InterpreterContext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterpreterContext.m; sourceTree = "<group>"; };
 		BECE85E623B9947300F63203 /* DecoratorComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DecoratorComponent.h; sourceTree = "<group>"; };
 		BECE85E723B9947300F63203 /* DecoratorComponent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DecoratorComponent.m; sourceTree = "<group>"; };
 		BECE85E923B995E800F63203 /* ConcreteComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConcreteComponent.h; sourceTree = "<group>"; };
@@ -260,6 +266,17 @@
 			path = Flyweight;
 			sourceTree = "<group>";
 		};
+		BEA0425823CF0AA00009167F /* Interpreter */ = {
+			isa = PBXGroup;
+			children = (
+				BEA0425923CF0AC00009167F /* AbstractExpression.h */,
+				BEA0425A23CF0AC00009167F /* AbstractExpression.m */,
+				BEA0425C23CF0AE10009167F /* InterpreterContext.h */,
+				BEA0425D23CF0AE10009167F /* InterpreterContext.m */,
+			);
+			path = Interpreter;
+			sourceTree = "<group>";
+		};
 		BECE85E523B9942C00F63203 /* Decorator */ = {
 			isa = PBXGroup;
 			children = (
@@ -347,6 +364,7 @@
 		BED6CA5423B3021A00AEE675 /* DesignPatternsDemo */ = {
 			isa = PBXGroup;
 			children = (
+				BEA0425823CF0AA00009167F /* Interpreter */,
 				BEA0425123CEEEE50009167F /* Flyweight */,
 				BEA0424A23CEC7290009167F /* Mediator */,
 				BEA0424323CD9E720009167F /* ChainOfResponsibility */,
@@ -560,6 +578,7 @@
 				BECE860A23BB4DBB00F63203 /* ConcreteClassA.m in Sources */,
 				BEA0423823CD78B90009167F /* Abstraction.m in Sources */,
 				BED6CA6423B303AC00AEE675 /* Operation.m in Sources */,
+				BEA0425B23CF0AC00009167F /* AbstractExpression.m in Sources */,
 				BEEC2AA023C5DAB0005A50B3 /* Adapter.m in Sources */,
 				BEEC2A7B23C42A35005A50B3 /* ObserVerSubject.m in Sources */,
 				BEA0422A23CD5D400009167F /* Iterator.m in Sources */,
@@ -571,6 +590,7 @@
 				BED6CA5E23B3029200AEE675 /* SingleFactory.m in Sources */,
 				BECE85F523B99D7300F63203 /* RealSubject.m in Sources */,
 				BECE85E823B9947300F63203 /* DecoratorComponent.m in Sources */,
+				BEA0425E23CF0AE10009167F /* InterpreterContext.m in Sources */,
 				BEEC2AAD23C5DE55005A50B3 /* Memento.m in Sources */,
 				BECE860723BB4A5200F63203 /* AbstractClass.m in Sources */,
 				BECE85F823B99D9200F63203 /* Proxy.m in Sources */,
