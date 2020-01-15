@@ -30,6 +30,7 @@
 #import "Invoker.h"
 #import "Handler.h"
 #import "Mediator.h"
+#import "FlyweightFactory.h"
 
 void testSingleFactory()
 {
@@ -290,6 +291,26 @@ void testMediator()
     [c2 send:@"没有呢，你打算请客？"];
 }
 
+
+void testFlyweight()
+{
+    int extrinsicstate = 22;
+    
+    FlyweightFactory *f = [[FlyweightFactory alloc] init];
+    
+    Flyweight *fx = [f getFlyweight:@"X"];
+    [fx operation: --extrinsicstate];
+    
+    Flyweight *fy = [f getFlyweight:@"Y"];
+    [fy operation: --extrinsicstate];
+    
+    Flyweight *fz = [f getFlyweight:@"Z"];
+    [fz operation: --extrinsicstate];
+    
+    UnsharedConcreteFlyweight *uf = [UnsharedConcreteFlyweight new];
+    [uf operation: --extrinsicstate];
+}
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
 //        testSingleFactory();
@@ -312,7 +333,8 @@ int main(int argc, const char * argv[]) {
 //        testBridge();
 //        testCommand();
 //        testHandler();
-        testMediator();
+//        testMediator();
+        testFlyweight();
     }
     return 0;
 }
