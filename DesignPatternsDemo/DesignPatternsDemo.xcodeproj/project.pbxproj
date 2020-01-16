@@ -22,6 +22,9 @@
 		BEA0425723CEEFEC0009167F /* FlyweightFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA0425623CEEFEC0009167F /* FlyweightFactory.m */; };
 		BEA0425B23CF0AC00009167F /* AbstractExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA0425A23CF0AC00009167F /* AbstractExpression.m */; };
 		BEA0425E23CF0AE10009167F /* InterpreterContext.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA0425D23CF0AE10009167F /* InterpreterContext.m */; };
+		BEA0426B23D04D3A0009167F /* Visitor.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA0426A23D04D3A0009167F /* Visitor.m */; };
+		BEA0426E23D04D600009167F /* Element.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA0426D23D04D600009167F /* Element.m */; };
+		BEA0427123D04EE60009167F /* ObjectStructure.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA0427023D04EE60009167F /* ObjectStructure.m */; };
 		BECE85E823B9947300F63203 /* DecoratorComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = BECE85E723B9947300F63203 /* DecoratorComponent.m */; };
 		BECE85EB23B995E800F63203 /* ConcreteComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = BECE85EA23B995E800F63203 /* ConcreteComponent.m */; };
 		BECE85EE23B996B700F63203 /* Decorator.m in Sources */ = {isa = PBXBuildFile; fileRef = BECE85ED23B996B700F63203 /* Decorator.m */; };
@@ -104,6 +107,12 @@
 		BEA0425A23CF0AC00009167F /* AbstractExpression.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AbstractExpression.m; sourceTree = "<group>"; };
 		BEA0425C23CF0AE10009167F /* InterpreterContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterpreterContext.h; sourceTree = "<group>"; };
 		BEA0425D23CF0AE10009167F /* InterpreterContext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterpreterContext.m; sourceTree = "<group>"; };
+		BEA0426923D04D3A0009167F /* Visitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Visitor.h; sourceTree = "<group>"; };
+		BEA0426A23D04D3A0009167F /* Visitor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Visitor.m; sourceTree = "<group>"; };
+		BEA0426C23D04D600009167F /* Element.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Element.h; sourceTree = "<group>"; };
+		BEA0426D23D04D600009167F /* Element.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Element.m; sourceTree = "<group>"; };
+		BEA0426F23D04EE60009167F /* ObjectStructure.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjectStructure.h; sourceTree = "<group>"; };
+		BEA0427023D04EE60009167F /* ObjectStructure.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjectStructure.m; sourceTree = "<group>"; };
 		BECE85E623B9947300F63203 /* DecoratorComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DecoratorComponent.h; sourceTree = "<group>"; };
 		BECE85E723B9947300F63203 /* DecoratorComponent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DecoratorComponent.m; sourceTree = "<group>"; };
 		BECE85E923B995E800F63203 /* ConcreteComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConcreteComponent.h; sourceTree = "<group>"; };
@@ -277,6 +286,19 @@
 			path = Interpreter;
 			sourceTree = "<group>";
 		};
+		BEA0426823D04D1F0009167F /* Visitor */ = {
+			isa = PBXGroup;
+			children = (
+				BEA0426923D04D3A0009167F /* Visitor.h */,
+				BEA0426A23D04D3A0009167F /* Visitor.m */,
+				BEA0426C23D04D600009167F /* Element.h */,
+				BEA0426D23D04D600009167F /* Element.m */,
+				BEA0426F23D04EE60009167F /* ObjectStructure.h */,
+				BEA0427023D04EE60009167F /* ObjectStructure.m */,
+			);
+			path = Visitor;
+			sourceTree = "<group>";
+		};
 		BECE85E523B9942C00F63203 /* Decorator */ = {
 			isa = PBXGroup;
 			children = (
@@ -364,6 +386,7 @@
 		BED6CA5423B3021A00AEE675 /* DesignPatternsDemo */ = {
 			isa = PBXGroup;
 			children = (
+				BEA0426823D04D1F0009167F /* Visitor */,
 				BEA0425823CF0AA00009167F /* Interpreter */,
 				BEA0425123CEEEE50009167F /* Flyweight */,
 				BEA0424A23CEC7290009167F /* Mediator */,
@@ -565,6 +588,7 @@
 				BECE85FF23BB304E00F63203 /* LeiFeng.m in Sources */,
 				BEEC2A7823C429F4005A50B3 /* StockObserver.m in Sources */,
 				BEEC2A3E23C2C984005A50B3 /* Product.m in Sources */,
+				BEA0427123D04EE60009167F /* ObjectStructure.m in Sources */,
 				BEEC2A4123C2CA51005A50B3 /* Builder.m in Sources */,
 				BEEC2A9923C5D5A5005A50B3 /* State.m in Sources */,
 				BEEC2A4423C2CB68005A50B3 /* Director.m in Sources */,
@@ -573,6 +597,7 @@
 				BECE85EE23B996B700F63203 /* Decorator.m in Sources */,
 				BEEC2AA323C5DABC005A50B3 /* Target.m in Sources */,
 				BEEC2A8C23C5858D005A50B3 /* IUser.m in Sources */,
+				BEA0426B23D04D3A0009167F /* Visitor.m in Sources */,
 				BECE85FC23BB303500F63203 /* IFactory.m in Sources */,
 				BEA0423523CD78560009167F /* Implementor.m in Sources */,
 				BECE860A23BB4DBB00F63203 /* ConcreteClassA.m in Sources */,
@@ -605,6 +630,7 @@
 				BEEC2AB023C5DF72005A50B3 /* Caretaker.m in Sources */,
 				BECE85F223B99D4D00F63203 /* Subject.m in Sources */,
 				BEA0424D23CEC73C0009167F /* Mediator.m in Sources */,
+				BEA0426E23D04D600009167F /* Element.m in Sources */,
 				BEEC2ACC23C9C98C005A50B3 /* CompositeComponent.m in Sources */,
 				BEA0424223CD99640009167F /* Invoker.m in Sources */,
 				BEEC2A9523C58917005A50B3 /* Department.m in Sources */,

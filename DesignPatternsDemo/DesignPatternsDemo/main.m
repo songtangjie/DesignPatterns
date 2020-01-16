@@ -32,6 +32,7 @@
 #import "Mediator.h"
 #import "FlyweightFactory.h"
 #import "AbstractExpression.h"
+#import "ObjectStructure.h"
 
 void testSingleFactory()
 {
@@ -326,6 +327,20 @@ void testInterpreter()
     }
 }
 
+void testVisitor()
+{
+    ObjectStructure * o = [ObjectStructure new];
+    [o attach:[ConcreteElementA new]];
+    [o attach:[ConcreteElementB new]];
+    
+    ConcreteVisitor1 *v1 = [ConcreteVisitor1 new];
+    ConcreteVisitor2 *v2 = [ConcreteVisitor2 new];
+    
+    [o accept:v1];
+    [o accept:v2];
+    
+}
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
 //        testSingleFactory();
@@ -350,7 +365,8 @@ int main(int argc, const char * argv[]) {
 //        testHandler();
 //        testMediator();
 //        testFlyweight();
-        testInterpreter();
+//        testInterpreter();
+        testVisitor();
     }
     return 0;
 }
